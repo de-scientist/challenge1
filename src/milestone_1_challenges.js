@@ -100,6 +100,24 @@ console.log(fizzBuzzCheck(10)); // returns Buzz
 console.log(fizzBuzzCheck(15)); // returns FizzBuzz
 console.log(fizzBuzzCheck(7)); // returns 7
 
+//Challenge 10: Perimeter 2
+function perimeter2(letter, number) {
+    if (letter === "s") {
+        return 4 * number;
+    } else if (letter === "r") {
+        return 2 * (number + number);
+    } else if (letter === "c") {
+        return 2 * Math.PI * number;
+    } else {
+        return "Invalid shape letter.";
+    }
+}
+console.log(perimeter2("s", 7)); // returns 28
+console.log(perimeter2("c", 4)); // returns 25.132741228718345
+console.log(perimeter2("r", 5)); // returns 20
+console.log(perimeter2("x", 5)); // returns Invalid shape letter.
+
+
 
 
 
