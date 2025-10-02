@@ -15,6 +15,15 @@ console.log(convert(5)); // returns 300
 console.log(convert(2)); // returns 120
 
 
+//Challenge 3: Perimeter of a Rectangle
+function findPerimeter(length, width) {
+    return 2 * (length + width);
+}
+let perimeter = findPerimeter(6, 7);
+console.log(perimeter); // returns 26
+perimeter = findPerimeter(20, 10);
+console.log(perimeter); // returns 60
+
 
 
 
