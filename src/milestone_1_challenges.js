@@ -51,7 +51,26 @@ console.log(findLargest(5, 9, 3)); // returns 9
 console.log(findLargest(10, 10, 10)); // returns 10
 console.log(findLargest(-1, -5, -3)); // returns -1
 
+//Challenge 7: BMI Calculator
+function calculateBMI(weight, height) {
+    let bmi = weight / (height * height);
+    if (bmi < 18.5) {
+        return `Your BMI is ${bmi.toFixed(2)}, you are underweight.`;
+    } else if (bmi >= 18.5 && bmi < 24.9) {
+        return `Your BMI is ${bmi.toFixed(2)}, you have a normal weight.`;
+    } else if (bmi >= 25 && bmi < 29.9) {
+        return `Your BMI is ${bmi.toFixed(2)}, you are overweight.`;
+    } else {
+        return `Your BMI is ${bmi.toFixed(2)}, you are obese. `;
+    }
+}
+console.log(calculateBMI(68, 1.75)); // returns Your BMI is 22.20, you have a normal weight.
+console.log (calculateBMI(85, 1.8)); // returns Your BMI is 26.23, you are overweight.
+
+
 //
+
+
 
 
 
