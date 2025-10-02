@@ -1,51 +1,47 @@
 //Challenge 1. Return the Sum of Two Numbers
-function addition (num1, num2) {
-    return num1 + num2;
+function addition(num1, num2) {
+  return num1 + num2;
 }
-console.log(addition(3,5)); // returns 8
+console.log(addition(3, 5)); // returns 8
 console.log(addition(-6, 9)); // returns 3
-
-
 
 //Challenge 2. Convert Minutes into seconds
 function convert(minutes) {
-    return minutes * 60;
+  return minutes * 60;
 }
 console.log(convert(5)); // returns 300
 console.log(convert(2)); // returns 120
 
-
 //Challenge 3: Perimeter of a Rectangle
 function findPerimeter(length, width) {
-    return 2 * (length + width);
+  return 2 * (length + width);
 }
 let perimeter = findPerimeter(6, 7);
 console.log(perimeter); // returns 26
 perimeter = findPerimeter(20, 10);
 console.log(perimeter); // returns 60
 
-
 // Challenge 4: Check Negative
 function isNegative(num) {
-    return num < 0;
+  return num < 0;
 }
 console.log(isNegative(-23)); // returns true
 console.log(isNegative(55)); // returns false
 
 //Challenge 5: Can I Drive
 function canDrive(name, age) {
-    if (age >= 18) {
-        return `${name} is old enough to drive.`;
-    } else {
-        return `${name} is not old enough to drive yet.`;
-    }
+  if (age >= 18) {
+    return `${name} is old enough to drive.`;
+  } else {
+    return `${name} is not old enough to drive yet.`;
+  }
 }
 console.log(canDrive("Jane", 22)); // returns Jane is old enough to drive.
 console.log(canDrive("June", 12)); // returns June is not old enough to drive yet.
 
 //Challenge 6: Largest Number
 function findLargest(a, b, c) {
-    return Math.max(a,b,c);
+  return Math.max(a, b, c);
 }
 console.log(findLargest(5, 9, 3)); // returns 9
 console.log(findLargest(10, 10, 10)); // returns 10
@@ -53,47 +49,45 @@ console.log(findLargest(-1, -5, -3)); // returns -1
 
 //Challenge 7: BMI Calculator
 function calculateBMI(weight, height) {
-    let bmi = weight / (height * height);
-    if (bmi < 18.5) {
-        return `Your BMI is ${bmi.toFixed(2)}, you are underweight.`;
-    } else if (bmi >= 18.5 && bmi < 24.9) {
-        return `Your BMI is ${bmi.toFixed(2)}, you have a normal weight.`;
-    } else if (bmi >= 25 && bmi < 29.9) {
-        return `Your BMI is ${bmi.toFixed(2)}, you are overweight.`;
-    } else {
-        return `Your BMI is ${bmi.toFixed(2)}, you are obese. `;
-    }
+  let bmi = weight / (height * height);
+  if (bmi < 18.5) {
+    return `Your BMI is ${bmi.toFixed(2)}, you are underweight.`;
+  } else if (bmi >= 18.5 && bmi < 24.9) {
+    return `Your BMI is ${bmi.toFixed(2)}, you have a normal weight.`;
+  } else if (bmi >= 25 && bmi < 29.9) {
+    return `Your BMI is ${bmi.toFixed(2)}, you are overweight.`;
+  } else {
+    return `Your BMI is ${bmi.toFixed(2)}, you are obese. `;
+  }
 }
 console.log(calculateBMI(68, 1.75)); // returns Your BMI is 22.20, you have a normal weight.
-console.log (calculateBMI(85, 1.8)); // returns Your BMI is 26.23, you are overweight.
-
+console.log(calculateBMI(85, 1.8)); // returns Your BMI is 26.23, you are overweight.
 
 //Challenge 8: Greeting Based On Time
 function greetUser(name, hour) {
-    if (hour >= 5 && hour <= 11) {
-        return `"Good morning, ${name}! have a good day."`;
-    } else if (hour >= 12 && hour <= 17) {
-        return `"Good afternoon, ${name}! Hope you're having a great day."`;
-    } else if (hour >= 18 && hour <= 21) {
-        return `"Good evening, ${name}! How was your day?"`;
-    } else if (hour >= 22 || hour <= 4) {
-        return `"Good night, ${name}! Sleep well."`;
-    }
+  if (hour >= 5 && hour <= 11) {
+    return `"Good morning, ${name}! have a good day."`;
+  } else if (hour >= 12 && hour <= 17) {
+    return `"Good afternoon, ${name}! Hope you're having a great day."`;
+  } else if (hour >= 18 && hour <= 21) {
+    return `"Good evening, ${name}! How was your day?"`;
+  } else if (hour >= 22 || hour <= 4) {
+    return `"Good night, ${name}! Sleep well."`;
+  }
 }
 console.log(greetUser("Alice", 20)); // returns "Good evening, Alice! How was your day?"
 
-
 //Challenge 9: FizzBuzz
 function fizzBuzzCheck(number) {
-    if (number % 3 === 0 && number % 5 === 0) {
-        return "FizzBuzz";
-    } else if (number % 3 === 0) {
-        return "Fizz";
-    } else if (number % 5 === 0) {
-        return "Buzz";
-    } else {
-        return String(number);
-    }
+  if (number % 3 === 0 && number % 5 === 0) {
+    return "FizzBuzz";
+  } else if (number % 3 === 0) {
+    return "Fizz";
+  } else if (number % 5 === 0) {
+    return "Buzz";
+  } else {
+    return String(number);
+  }
 }
 console.log(fizzBuzzCheck(3)); // returns Fizz
 console.log(fizzBuzzCheck(10)); // returns Buzz
@@ -102,15 +96,15 @@ console.log(fizzBuzzCheck(7)); // returns 7
 
 //Challenge 10: Perimeter 2
 function perimeter2(letter, number) {
-    if (letter === "s") {
-        return 4 * number;
-    } else if (letter === "r") {
-        return 2 * (number + number);
-    } else if (letter === "c") {
-        return 2 * Math.PI * number;
-    } else {
-        return "Invalid shape letter.";
-    }
+  if (letter === "s") {
+    return 4 * number;
+  } else if (letter === "r") {
+    return 2 * (number + number);
+  } else if (letter === "c") {
+    return 2 * Math.PI * number;
+  } else {
+    return "Invalid shape letter.";
+  }
 }
 console.log(perimeter2("s", 7)); // returns 28
 console.log(perimeter2("c", 4)); // returns 25.132741228718345
@@ -119,87 +113,69 @@ console.log(perimeter2("x", 5)); // returns Invalid shape letter.
 
 //Challenge 11: Sum of Even Numbers
 function sumEvenNumbers(n) {
-    let sum = 0;
-    for (let i = 1; i <= n; i++) {
-        if (i % 2 === 0) {
-            sum += i;
-        }
-    } 
-    return sum;
+  let sum = 0;
+  for (let i = 1; i <= n; i++) {
+    if (i % 2 === 0) {
+      sum += i;
+    }
+  }
+  return sum;
 }
 console.log(sumEvenNumbers(6)); // returns 12
 
-
 //Challenge 12: Multiply by Itself  using a loop and arithmetic operators and no Math.pow()
 function powerUp(num, times) {
-    let result = 1;
-    for (let i = 0; i < times; i++) {
-        result *= num;
-    } 
-    return result;
+  let result = 1;
+  for (let i = 0; i < times; i++) {
+    result *= num;
+  }
+  return result;
 }
 console.log(powerUp(2, 3)); // returns 8
 console.log(powerUp(5, 0)); // returns 1
 console.log(powerUp(0)); // returns 1
 
-
 //Challenge 13: Factorial Calculator
 function factorial(n) {
-    if (n < 0) {
-        return "Factorial is not defined for negative numbers.";
-    } else if (n === 0) {
-        return 1;
-    } else {
-        let result = 1;
-        for (let i = 1; i <= n; i++) {
-            result *= i;
-        }
-        return result;
-    } 
+  if (n < 0) {
+    return "Factorial is not defined for negative numbers.";
+  } else if (n === 0) {
+    return 1;
+  } else {
+    let result = 1;
+    for (let i = 1; i <= n; i++) {
+      result *= i;
+    }
+    return result;
+  }
 }
 console.log(factorial(0)); // returns 1
 console.log(factorial(6)); // returns 720
 console.log(factorial(-3)); // returns Factorial is not defined for negative numbers.
 
-
 //Challenge 14: Multiple Sum
 function sumMultiples(n, divisor) {
-     let sum = 0;
-     for (let i = 1; i <= n; i++) {
-        if (i % divisor === 0) {
-            sum += i;
-     } 
-     } 
-      return sum;
+  let sum = 0;
+  for (let i = 1; i <= n; i++) {
+    if (i % divisor === 0) {
+      sum += i;
+    }
+  }
+  return sum;
 }
 console.log(sumMultiples(10, 2)); // returns 30
 console.log(sumMultiples(15, 3)); // returns 45
 
-
 //Challenge 15: Sum of Digits using arithmetic operators, while loop and no string methods and no arrays
 function sumDigits(num) {
-    let sum = 0;
-    num = Math.abs(num); // Handle negative numbers
-    while (num > 0) {
-        sum += num % 10; // Add the last digit to sum
-        num = Math.floor(num / 10); // Remove the Last digit
-    } 
-    return sum;
+  let sum = 0;
+  num = Math.abs(num); // Handle negative numbers
+  while (num > 0) {
+    sum += num % 10; // Add the last digit to sum
+    num = Math.floor(num / 10); // Remove the Last digit
+  }
+  return sum;
 }
 console.log(sumDigits(123)); // returns 6
 console.log(sumDigits(-456)); // returns 15
 console.log(sumDigits(0)); // returns 0
-
-
-
-
-
-
-
-
-
-
-
-
-
-
