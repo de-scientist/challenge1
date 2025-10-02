@@ -43,6 +43,17 @@ function canDrive(name, age) {
 console.log(canDrive("Jane", 22)); // returns Jane is old enough to drive.
 console.log(canDrive("June", 12)); // returns June is not old enough to drive yet.
 
+//Challenge 6: Largest Number
+function findLargest(a, b, c) {
+    return Math.max(a,b,c);
+}
+console.log(findLargest(5, 9, 3)); // returns 9
+console.log(findLargest(10, 10, 10)); // returns 10
+console.log(findLargest(-1, -5, -3)); // returns -1
+
+//
+
+
 
 
 
