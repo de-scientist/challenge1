@@ -25,6 +25,14 @@ perimeter = findPerimeter(20, 10);
 console.log(perimeter); // returns 60
 
 
+// Challenge 4: Check Negative
+function isNegative(num) {
+    return num < 0;
+}
+console.log(isNegative(-23)); // returns true
+console.log(isNegative(55)); // returns false
+
+
 
 
 
