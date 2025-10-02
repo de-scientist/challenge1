@@ -143,6 +143,26 @@ console.log(powerUp(5, 0)); // returns 1
 console.log(powerUp(0)); // returns 1
 
 
+//Challenge 13: Factorial Calculator
+function factorial(n) {
+    if (n < 0) {
+        return "Factorial is not defined for negative numbers.";
+    } else if (n === 0) {
+        return 1;
+    } else {
+        let result = 1;
+        for (let i = 1; i <= n; i++) {
+            result *= i;
+        }
+        return result;
+    } 
+}
+console.log(factorial(0)); // returns 1
+console.log(factorial(6)); // returns 720
+console.log(factorial(-3)); // returns Factorial is not defined for negative numbers.
+
+
+
 
 
 
