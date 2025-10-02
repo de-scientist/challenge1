@@ -68,7 +68,19 @@ console.log(calculateBMI(68, 1.75)); // returns Your BMI is 22.20, you have a no
 console.log (calculateBMI(85, 1.8)); // returns Your BMI is 26.23, you are overweight.
 
 
-//
+//Challenge 8: Greeting Based On Time
+function greetUser(name, hour) {
+    if (hour >= 5 && hour <= 11) {
+        return `"Good morning, ${name}! have a good day."`;
+    } else if (hour >= 12 && hour <= 17) {
+        return `"Good afternoon, ${name}! Hope you're having a great day."`;
+    } else if (hour >= 18 && hour <= 21) {
+        return `"Good evening, ${name}! How was your day?"`;
+    } else if (hour >= 22 || hour <= 4) {
+        return `"Good night, ${name}! Sleep well."`;
+    }
+}
+console.log(greetUser("Alice", 20)); // returns "Good evening, Alice! How was your day?"
 
 
 
