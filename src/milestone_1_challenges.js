@@ -176,6 +176,22 @@ console.log(sumMultiples(10, 2)); // returns 30
 console.log(sumMultiples(15, 3)); // returns 45
 
 
+//Challenge 15: Sum of Digits using arithmetic operators, while loop and no string methods and no arrays
+function sumDigits(num) {
+    let sum = 0;
+    num = Math.abs(num); // Handle negative numbers
+    while (num > 0) {
+        sum += num % 10; // Add the last digit to sum
+        num = Math.floor(num / 10); // Remove the Last digit
+    } 
+    return sum;
+}
+console.log(sumDigits(123)); // returns 6
+console.log(sumDigits(-456)); // returns 15
+console.log(sumDigits(0)); // returns 0
+
+
+
 
 
 
