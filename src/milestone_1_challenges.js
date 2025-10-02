@@ -83,6 +83,25 @@ function greetUser(name, hour) {
 console.log(greetUser("Alice", 20)); // returns "Good evening, Alice! How was your day?"
 
 
+//Challenge 9: FizzBuzz
+function fizzBuzzCheck(number) {
+    if (number % 3 === 0 && number % 5 === 0) {
+        return "FizzBuzz";
+    } else if (number % 3 === 0) {
+        return "Fizz";
+    } else if (number % 5 === 0) {
+        return "Buzz";
+    } else {
+        return String(number);
+    }
+}
+console.log(fizzBuzzCheck(3)); // returns Fizz
+console.log(fizzBuzzCheck(10)); // returns Buzz
+console.log(fizzBuzzCheck(15)); // returns FizzBuzz
+console.log(fizzBuzzCheck(7)); // returns 7
+
+
+
 
 
 
