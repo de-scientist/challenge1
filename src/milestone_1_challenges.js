@@ -117,6 +117,17 @@ console.log(perimeter2("c", 4)); // returns 25.132741228718345
 console.log(perimeter2("r", 5)); // returns 20
 console.log(perimeter2("x", 5)); // returns Invalid shape letter.
 
+//Challenge 11: Sum of Even Numbers
+function sumEvenNumbers(n) {
+    let sum = 0;
+    for (let i = 1; i <= n; i++) {
+        if (i % 2 === 0) {
+            sum += i;
+        }
+    } 
+    return sum;
+}
+console.log(sumEvenNumbers(6)); // returns 12
 
 
 
