@@ -162,6 +162,20 @@ console.log(factorial(6)); // returns 720
 console.log(factorial(-3)); // returns Factorial is not defined for negative numbers.
 
 
+//Challenge 14: Multiple Sum
+function sumMultiples(n, divisor) {
+     let sum = 0;
+     for (let i = 1; i <= n; i++) {
+        if (i % divisor === 0) {
+            sum += i;
+     } 
+     } 
+      return sum;
+}
+console.log(sumMultiples(10, 2)); // returns 30
+console.log(sumMultiples(15, 3)); // returns 45
+
+
 
 
 
