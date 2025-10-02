@@ -130,6 +130,22 @@ function sumEvenNumbers(n) {
 console.log(sumEvenNumbers(6)); // returns 12
 
 
+//Challenge 12: Multiply by Itself  using a loop and arithmetic operators and no Math.pow()
+function powerUp(num, times) {
+    let result = 1;
+    for (let i = 0; i < times; i++) {
+        result *= num;
+    } 
+    return result;
+}
+console.log(powerUp(2, 3)); // returns 8
+console.log(powerUp(5, 0)); // returns 1
+console.log(powerUp(0)); // returns 1
+
+
+
+
+
 
 
 
